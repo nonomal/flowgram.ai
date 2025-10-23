@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:fast -- --dts-resolve",
+    "build": "tsup",
     "build:fast": "tsup src/index.ts --format cjs,esm --sourcemap --legacy-output",
     "build:watch": "npm run build:fast -- --dts-resolve",
     "clean": "rimraf dist",
